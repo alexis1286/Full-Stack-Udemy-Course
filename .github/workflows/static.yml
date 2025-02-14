@@ -31,13 +31,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        
+      - name: Debug Output (Check if Images Exist)
+        run: ls -R ./Capstone/assets/Images
+        
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: './Capstone/public'
+          # Upload entire Capstone directory to include assets and images
+          path: './Capstone'
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
