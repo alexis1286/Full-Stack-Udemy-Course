@@ -11,6 +11,7 @@ This repository includes:
 - Backend projects (Node.js, Express, MongoDB, SQL)
 - Full-stack applications
 - Additional exercises and assignments completed throughout the course
+- **Portfolio Capstone Project:** [View Here](https://alexis1286.github.io/Full-Stack-Udemy-Course/)
 
 ## Technologies Used
 - **Frontend:** HTML, CSS, JavaScript, React
