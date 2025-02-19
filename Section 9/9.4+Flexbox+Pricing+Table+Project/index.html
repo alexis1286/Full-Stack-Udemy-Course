@@ -15,13 +15,9 @@
 			.pricing-container {
 				display: flex;
 				justify-content: center;
-				align-items: stretch;
-				gap: 20px;
-				padding: 10px;
-			}
-			ul {
-				/*removes bullets*/
-				list-style-type: none;
+				align-items: center;
+				height: 100vh; /*this puts it in the center of screen*/
+				gap: 2rem;
 			}
 
 			.plan-title,
@@ -34,25 +30,30 @@
 				font-size: 2em;
 			}
 			.pricing-plan {
+				flex: 1; 
+				max-width: 300px;
+				padding: 20px;
 				background-color: #f2f2f2;
 				border-radius: 5%;
-				padding: 20px;
-        flex-basis: 300px;
-        text-align: center;
+				text-align: center;
+			}
+
+
+			.plan-features{
+				list-style: none; /*removes styling on list - bullets*/
+				padding: 0;
+				margin: 0; 
+				/*this removes the padding and margin, centering the text*/
 			}
 
 			.plan-features li {
-				display: flex;
-				justify-content: center; /* Centers text horizontally */
-				align-items: center;
-				gap: 5px;
-				font-size: 1em;
-				width: 100%;
+				 margin-bottom: 4px;
 			}
+
 			.plan-button {
 				background-color: #fe6603;
 				color: white;
-				border: 0;
+				border: none;
 				border-radius: 10%;
 				padding: 5px;
 			}
@@ -62,14 +63,9 @@
 				.pricing-container {
 					display: flex;
 					flex-direction: column;
-					text-align: center;
-					justify-content: center;
-					align-items: center;
-					gap: 20px;
+					height: 100%;
 				}
-        .pricing-plan{
-          min-width: 300px;
-        }
+				
 			}
 		</style>
 	</head>
