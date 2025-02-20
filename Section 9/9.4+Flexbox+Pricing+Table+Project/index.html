@@ -13,10 +13,12 @@
 				font-family: "Sono", sans-serif;
 			}
 			.pricing-container {
+				/*this puts it in the center of screen, probs best way to do so*/
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				height: 100vh; /*this puts it in the center of screen*/
+				height: 100vh;
+
 				gap: 2rem;
 			}
 
@@ -30,6 +32,7 @@
 				font-size: 2em;
 			}
 			.pricing-plan {
+				/* equal in witdth  */
 				flex: 1; 
 				max-width: 300px;
 				padding: 20px;
@@ -38,16 +41,15 @@
 				text-align: center;
 			}
 
-
-			.plan-features{
+			.plan-features {
 				list-style: none; /*removes styling on list - bullets*/
 				padding: 0;
-				margin: 0; 
+				margin: 0;
 				/*this removes the padding and margin, centering the text*/
 			}
 
 			.plan-features li {
-				 margin-bottom: 4px;
+				margin-bottom: 4px;
 			}
 
 			.plan-button {
@@ -64,8 +66,8 @@
 					display: flex;
 					flex-direction: column;
 					height: 100%;
+					/* this height is changed bc were in a column now  */
 				}
-				
 			}
 		</style>
 	</head>
