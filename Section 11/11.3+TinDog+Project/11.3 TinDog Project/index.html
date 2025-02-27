@@ -15,8 +15,8 @@
 
 	<body>
 		<!-- Title -->
-		<section id="title">
-			<div class="container-fluid gradient-background px-4 pt-5">
+		<section id="title" class="gradient-background">
+			<div class="container col-xxl-8 px-4 pt-5">
 				<div class="row flex-lg-row-reverse align-items-center g-5 pt-5">
 					<div class="col-10 col-sm-8 col-lg-6">
 						<img
@@ -24,6 +24,7 @@
 							class="d-block mx-lg-auto img-fluid"
 							alt="Bootstrap Themes"
 							loading="lazy"
+							height="200"
 						/>
 					</div>
 					<div class="col-lg-6">
@@ -71,7 +72,7 @@
 		</section>
 		<!-- Features -->
 		<section id="features">
-			<div class="container px-4 py-5" id="hanging-icons">
+			<div class="container mt-5" id="hanging-icons">
 				<div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
 					<div class="col d-flex align-items-start">
 						<div
@@ -156,36 +157,50 @@
 					</h2>
 					<img
 						src="./images/dog-img.jpg"
-						class="rounded-circle mt-5"
+						class="profile-img mt-5"
 						alt="Cinque Terre"
 					/>
-					<p class="lead mt-2">Pebbles, New York</p>
+					<p class="col-lg-8 mx-auto lead mt-2">Pebbles, New York</p>
 
-					<div class="container" style="height: 30px;" >
-						<div class="row" >
+					<div class="container">
+						<div class="row">
 							<div class="col-lg-3 col-sm-12">
-								<img src="images/techcrunch.png" alt="techcrunch" class="img-fluid custom-img" />
+								<img
+									src="images/techcrunch.png"
+									alt="techcrunch"
+									height="30"
+								/>
 							</div>
 							<div class="col-lg-3 col-sm-12">
-								<img src="./images/mashable.png" alt="mashable" class="img-fluid custom-img"/>
+								<img
+									src="./images/mashable.png"
+									alt="mashable"
+									height="30"
+								/>
 							</div>
 							<div class="col-lg-3 col-sm-12">
-								<img src="./images/bizinsider.png" alt="bizinsider"  class="img-fluid custom-img"/>
+								<img
+									src="./images/bizinsider.png"
+									alt="bizinsider"
+									height="30"
+								/>
 							</div>
 
 							<div class="col-lg-3 col-sm-12">
-								<img src="./images/tnw.png" alt="tnw" class="img-fluid custom-img"/>
+								<img
+									src="./images/tnw.png"
+									alt="tnw"
+									height="30"
+								/>
 							</div>
 						</div>
 					</div>
-
-					
 				</div>
 			</div>
 		</section>
 		<!-- Pricing -->
 		<section id="pricing">
-			<div class="container py-3">
+			<div class="container">
 				<header>
 					<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
 						<h2 class="display-4 fw-normal text-body-emphasis pt-5">
@@ -267,18 +282,11 @@
 			</div>
 		</section>
 		<!-- Footer -->
-		<section id="footer">
-			<div class="container-fluid gradient-background">
-				<footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5">
+		<section id="footer" class="gradient-background">
+			<div class="container">
+				<footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5 border-top">
 					<div class="col mb-3">
-						<a
-							href="/"
-							class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
-						>
-							<svg class="bi me-2" width="40" height="32">
-								<use xlink:href="#bootstrap"></use>
-							</svg>
-						</a>
+		
 						<p class="text-body-secondary">© TinDog</p>
 					</div>
 
