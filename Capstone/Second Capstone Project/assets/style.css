@@ -1,0 +1,62 @@
+/* F7CFD8 #pink */
+/* F4F8D3 yellow */
+/* A6F1E0 light blue */
+/* 73C7C7 dark blue */
+head {
+	display: none;
+}
+
+body {
+	margin: 0;
+    padding: 0;
+}
+
+
+
+.hero {
+	position: relative;
+	background-color: #f7cfd8;
+	padding-top: 100px;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+h1 {
+	color: #ec8da3;
+	font-size: 5.625rem;
+	margin: 50px auto 0 auto;
+	font-family: "Sacramento", cursive;
+	text-align: center;
+}
+
+h2 {
+	color: #ec8da3;
+	font-family: "Montserrat", sans-serif;
+	font-size: 2.5rem;
+	font-weight: normal;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.cloud-1{
+    position: absolute;
+    right: 10px;
+    top: 270px;
+}
+
+.cloud-2{
+    position: absolute;
+    left: 80px;
+    top: 10px;
+}
+.cloud-3{
+    position: absolute;
+    left: 30px;
+    bottom: 300px;
+}
+
+.flowers{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
