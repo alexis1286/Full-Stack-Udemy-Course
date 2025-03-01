@@ -8,17 +8,15 @@ head {
 
 body {
 	margin: 0;
-    padding: 0;
+	padding: 0;
 }
-
-
 
 .hero {
 	position: relative;
 	background-color: #f7cfd8;
 	padding-top: 100px;
-    padding-bottom: 0;
-    margin: 0;
+	padding-bottom: 0;
+	margin: 0;
 }
 
 h1 {
@@ -38,25 +36,97 @@ h2 {
 	text-align: center;
 }
 
-.cloud-1{
-    position: absolute;
-    right: 10px;
-    top: 270px;
+.cloud-1 {
+	position: absolute;
+	right: 10px;
+	top: 270px;
 }
 
-.cloud-2{
-    position: absolute;
-    left: 80px;
-    top: 10px;
+.cloud-2 {
+	position: absolute;
+	left: 80px;
+	top: 10px;
 }
-.cloud-3{
-    position: absolute;
-    left: 30px;
-    bottom: 300px;
+.cloud-3 {
+	position: absolute;
+	left: 30px;
+	bottom: 300px;
 }
 
-.flowers{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+.flowers {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.about-me {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap:50px;
+	padding:50px;
+}
+
+/*Skills Section*/
+.profile {
+	display: flex;
+	flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 40%;
+	padding-right:200px;
+}
+
+.profile > p{
+	font-family: "Montserrat", sans-serif;
+	font-size: 1rem;
+	font-weight: bold;
+	color: #ec8da3;
+	text-align: center;
+	width: 400px;
+}
+.pfp {
+	border-radius: 70%;
+}
+
+.skills img {
+	width: 100px;
+	height: 100px;
+}
+
+.skills{
+	display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    justify-content: space-between;
+    align-items: center;
+    max-width: 50%;
+}
+
+.skill-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+
+
+.Skill-Img {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 140px;
+
+    border: 5px solid #ec8da3;
+    border-radius: 25px;
+
+
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ec8da3;
+    
 }
