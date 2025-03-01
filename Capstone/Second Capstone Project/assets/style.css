@@ -59,26 +59,38 @@ h2 {
 	display: block;
 }
 
-.about-me {
+/*Skills Section*/
+
+/* About me header  */
+.about-me > h2 {
+	font-family: "Montserrat", sans-serif;
+	padding-top: 50px;
+	font-weight: bold;
+	font-size: 60px;
+	text-align: center;
+	color: #f7cfd8;
+	text-shadow: 4px 4px  #ec8da3;
+}
+
+.about-content {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap:50px;
-	padding:50px;
+	gap: 50px;
+	padding: 50px;
 }
 
-/*Skills Section*/
 .profile {
 	display: flex;
 	flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 40%;
-	padding-right:200px;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	max-width: 40%;
+	padding-right: 200px;
 }
 
-.profile > p{
+.profile > p {
 	font-family: "Montserrat", sans-serif;
 	font-size: 1rem;
 	font-weight: bold;
@@ -95,38 +107,51 @@ h2 {
 	height: 100px;
 }
 
-.skills{
+.skills {
 	display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 20px; 
-    justify-content: space-between;
-    align-items: center;
-    max-width: 50%;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 50%;
 }
 
 .skill-group {
-    display: flex;
-    justify-content: center;
-    gap: 20px; 
+	display: flex;
+	justify-content: center;
+	gap: 20px;
 }
-
 
 .Skill-Img {
 	display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 140px;
-    height: 140px;
-
-    border: 5px solid #ec8da3;
-    border-radius: 25px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 140px;
+	height: 140px;
 
 
-    font-family: "Montserrat", sans-serif;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: bold;
-    color: #ec8da3;
-    
+	/*borders around skills*/
+	border: 5px solid #ec8da3;
+	border-radius: 25px;
+	box-shadow: 10px 10px 2px #f7cfd8;
+
+	/*text formatting*/
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+	font-size: 1rem;
+	font-weight: bold;
+	color: #ec8da3;
+}
+
+
+/**Previous Project Formatting*/
+.previous-projects > h2{
+	font-family: "Montserrat", sans-serif;
+	padding-top: 50px;
+	font-weight: bold;
+	font-size: 60px;
+	text-align: center;
+	color: #f7cfd8;
+	text-shadow: 4px 4px  #ec8da3;
 }
