@@ -1,7 +1,8 @@
-/* F7CFD8 #pink */
-/* F4F8D3 yellow */
-/* A6F1E0 light blue */
-/* 73C7C7 dark blue */
+
+body, html {
+    overflow-x: hidden;
+}
+
 head {
 	display: none;
 }
@@ -9,6 +10,62 @@ head {
 body {
 	margin: 0;
 	padding: 0;
+	
+}
+@media (max-width: 1300px) {
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .profile {
+        max-width: 100%;
+        text-align: center;
+        padding-right: 0;
+        box-sizing: border-box;
+    }
+
+    .skills {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .previous-projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .Attention {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .AA-logo {
+        max-width: 100%;
+        padding-right: 0;
+    }
+
+    .AA-Text {
+        max-width: 100%;
+        padding: 0 20px;
+        text-align: center;
+    }
 }
 
 .hero {
@@ -17,6 +74,8 @@ body {
 	padding-top: 100px;
 	padding-bottom: 0;
 	margin: 0;
+	width: 100%;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -69,7 +128,7 @@ h2 {
 	font-size: 60px;
 	text-align: center;
 	color: #f7cfd8;
-	text-shadow: 4px 4px  #ec8da3;
+	text-shadow: 4px 4px #ec8da3;
 }
 
 .about-content {
@@ -78,6 +137,7 @@ h2 {
 	align-items: center;
 	gap: 50px;
 	padding: 50px;
+	
 }
 
 .profile {
@@ -111,9 +171,10 @@ h2 {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 20px;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
-	max-width: 50%;
+	max-width: 600px;
+
 }
 
 .skill-group {
@@ -130,7 +191,6 @@ h2 {
 	width: 140px;
 	height: 140px;
 
-
 	/*borders around skills*/
 	border: 5px solid #ec8da3;
 	border-radius: 25px;
@@ -144,14 +204,172 @@ h2 {
 	color: #ec8da3;
 }
 
-
 /**Previous Project Formatting*/
-.previous-projects > h2{
+
+.previous-projects {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 50%;
+	margin: 0 auto;
+}
+
+.Attention {
+	display: flex;
+	margin-bottom: 5rem;
+	justify-content: flex-start;
+}
+
+.previous-projects > h2 {
 	font-family: "Montserrat", sans-serif;
 	padding-top: 50px;
 	font-weight: bold;
 	font-size: 60px;
 	text-align: center;
 	color: #f7cfd8;
-	text-shadow: 4px 4px  #ec8da3;
+	text-shadow: 4px 4px #ec8da3;
 }
+
+.AA-Text {
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+	font-weight: 500;
+	color: #ec8da3;
+	background-color: rgba(247, 207, 216, 0.45);
+	padding: 20px;
+	border-radius: 30px;
+	box-shadow: 10px 10px 2px #f7cfd8;
+	max-width: 60%;
+}
+
+/**links in previous projects**/
+.previous-projects a {
+	font-size: 23px;
+	margin-right: 20px;
+	font-weight: 400;
+	color: #ec8da3;
+	text-decoration-color: white;
+	text-decoration-thickness: 4px;
+}
+
+.previous-projects a:hover {
+	background-color: white;
+}
+
+/**Attention assistant heading**/
+.AA-Text > h2 {
+	font-family: "Montserrat", sans-serif;
+	font-size: 50px;
+	text-align: center;
+	color: #ec8da3;
+}
+
+.AA-logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 40%;
+	padding-right: 200px;
+}
+
+/**Contact Section**/
+.contact h2 {
+	font-family: "Montserrat", sans-serif;
+	padding-top: 50px;
+	font-weight: bold;
+	font-size: 60px;
+	text-align: center;
+	color: #f7cfd8;
+	text-shadow: 4px 4px #ec8da3;
+}
+
+.contact-form-container {
+	position: relative;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	border: 5px solid #ec8da3;
+	border-radius: 25px;
+	box-shadow: 10px 10px 2px #f7cfd8;
+	padding: 20px;
+	max-width: 600px;
+}
+
+.input-field {
+	width: 500px;
+	padding: 10px;
+	border: 2px solid #ec8da3;
+	margin: 3px;
+	border-radius: 10px;
+	font-family: "Montserrat", sans-serif;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+	background-color: #f7cfd8;
+	resize: none;
+	cursor: text;
+}
+
+.input-field::placeholder {
+	font-family: "Montserrat", sans-serif;
+	font-weight: bolder;
+	color: white;
+}
+
+.input-field:focus {
+	border: 2px solid #ec8da3;
+	outline: none;
+	box-shadow: 0 0 5px #ec8da3;
+	background-color: #f7cfd8;
+	color: #ffffff;
+}
+.submit-btn {
+	align-self: flex-end;
+	margin-top: 5px;
+	padding: 10px 20px;
+	background-color: #f7cfd8;
+	border: 2px solid #ec8da3;
+	border-radius: 7px;
+	font-family: "Montserrat", sans-serif;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+	font-family: "Montserrat", sans-serif;
+	font-weight: bolder;
+	color: white;
+}
+
+/*footer section*/
+.footer {
+	position: relative;
+	background-color: #f7cfd8;
+	margin-top: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	   width: 100%;
+    box-sizing: border-box;
+}
+
+
+.footer-icons {
+	display: flex;
+	gap: 20px;
+}
+
+.footer p {
+	margin-top: 10px;
+	font-family: "Montserrat", sans-serif;
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+}
+

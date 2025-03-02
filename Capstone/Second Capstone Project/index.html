@@ -21,7 +21,7 @@
 	<body>
 		<section class="navbar"></section>
 
-	<!--Hero Section-->
+		<!--Hero Section-->
 		<section class="hero">
 			<div>
 				<h1>I'm Alexis</h1>
@@ -53,75 +53,161 @@
 			</div>
 		</section>
 
-
-<!-- About Me/Skills Section -->
+		<!-- About Me/Skills Section -->
 		<section class="about-me">
 			<h2>About Me</h2>
 			<div class="about-content">
-			<div class="profile">
-				<img class="pfp" src="./assets/images/me.jpeg" height="250" />
-				<p>Hi!</p>
-				<p class="pfp">
-					I am Alexis Lovitz, a computer science graduate with a knowdlge in
-					software development, particularly in C++, Python, and Java.
-					Additinally, I have been learning HTML, CSS and javaScript! I am
-					currently seeking a computer science role where I can leverage my
-					skills and grow professionally.
-				</p>
+				<div class="profile">
+					<img class="pfp" src="./assets/images/me.jpeg" height="250" />
+					<p>Hi!</p>
+					<p class="pfp">
+						I am Alexis Lovitz, a computer science graduate with a knowdlge in
+						software development, particularly in C++, Python, and Java.
+						Additinally, I have been learning HTML, CSS and javaScript! I am
+						currently seeking a computer science role where I can leverage my
+						skills and grow professionally.
+					</p>
+				</div>
+				<div class="skills">
+					<div class="skill-group">
+						<div class="Skill-Img">
+							<img src="./assets/images/C++.png" alt="C++ Logo" />
+							<p>C++</p>
+						</div>
+						<div class="Skill-Img">
+							<img src="./assets/images/python.svg" alt="Python Logo" />
+							<p>Python</p>
+						</div>
+					</div>
+					<div class="skill-group">
+						<div class="Skill-Img">
+							<img src="./assets/images/java-logo-1.png" alt="Java Logo" />
+							<p>Java</p>
+						</div>
+						<div class="Skill-Img">
+							<img src="./assets/images/mysql.png" alt="MySQL Logo" />
+							<p>MySQL</p>
+						</div>
+					</div>
+					<div class="skill-group">
+						<div class="Skill-Img">
+							<img src="./assets/images/gitlab.png" alt="GitLab Logo" />
+							<p>GitLab</p>
+						</div>
+						<div class="Skill-Img">
+							<img src="./assets/images/icons8-git.svg" alt="Git Logo" />
+							<p>Git</p>
+						</div>
+					</div>
+					<div class="skill-group">
+						<div class="Skill-Img">
+							<img src="./assets/images/icons8-html-5.svg" alt="HTML5 Logo" />
+							<p>HTML</p>
+						</div>
+						<div class="Skill-Img">
+							<img src="./assets/images/CSS3_logo.svg.png" alt="CSS Logo" />
+							<p>CSS</p>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="skills">
-				<div class="skill-group">
-					<div class="Skill-Img">
-						<img src="./assets/images/C++.png" alt="C++ Logo" />
-						<p>C++</p>
-					</div>
-					<div class="Skill-Img">
-						<img src="./assets/images/python.svg" alt="Python Logo" />
-						<p>Python</p>
-					</div>
-				</div>
-				<div class="skill-group">
-					<div class="Skill-Img">
-						<img src="./assets/images/java-logo-1.png" alt="Java Logo" />
-						<p>Java</p>
-					</div>
-					<div class="Skill-Img">
-						<img src="./assets/images/mysql.png" alt="MySQL Logo" />
-						<p>MySQL</p>
-					</div>
-				</div>
-				<div class="skill-group">
-					<div class="Skill-Img">
-						<img src="./assets/images/gitlab.png" alt="GitLab Logo" />
-						<p>GitLab</p>
-					</div>
-					<div class="Skill-Img">
-						<img src="./assets/images/icons8-git.svg" alt="Git Logo" />
-						<p>Git</p>
-					</div>
-				</div>
-				<div class="skill-group">
-					<div class="Skill-Img">
-						<img src="./assets/images/icons8-html-5.svg" alt="HTML5 Logo" />
-						<p>HTML</p>
-					</div>
-					<div class="Skill-Img">
-						<img src="./assets/images/CSS3_logo.svg.png" alt="CSS Logo" />
-						<p>CSS</p>
-					</div>
-				</div>
-			</div>
-		</div>
 		</section>
 
 		<section class="previous-projects">
 			<h2>Previous Projects</h2>
-	
-			
-
-
+			<div class="Attention to-the-left">
+				<img
+					class="AA-logo"
+					src="./assets/images/attentionassistant.png"
+					alt="attention assistant image"
+				/>
+				<div class="AA-Text">
+					<h2>The Attention Assistant</h2>
+					<p>
+						Java desktop application to help adolescents with ADHD stay focused
+						while working on the computer.
+					</p>
+					<p>
+						<a href="https://www.cs.odu.edu/~cpi/old/411/coppers22/">Website</a>
+						<a href="https://github.com/alexis1286/AttentionAssistant"
+							>GitHub</a
+						>
+					</p>
+				</div>
+			</div>
 		</section>
 
-		<section class="contact"></section>
+		<section class="contact">
+			<div class="contact-form-container">
+				<h2>Get In Touch With Me</h2>
+				<form
+					class="form"
+					action="https://formspree.io/f/xrgnnngr"
+					method="POST"
+				>
+					<div class="form-control">
+						<input
+							type="text"
+							name="sender-name"
+							placeholder="Enter Your Name"
+							class="input-field"
+							required
+						/>
+					</div>
+					<div class="form-control">
+						<input
+							type="email"
+							name="sender-email"
+							placeholder="Enter Your Email"
+							class="input-field"
+							required
+						/>
+					</div>
+					<div class="form-control">
+						<textarea
+							cols="60"
+							rows="10"
+							placeholder="Enter Your Message"
+							name="message"
+							class="input-field"
+							required
+						></textarea>
+					</div>
+					<input type="submit" value="Submit" class="submit-btn" />
+				</form>
+			</div>
+		</section>
+
+		<section class="footer-section">
+			<div class="footer">
+				<div class="footer-icons">
+					<a href="mailto:alovitzschool@gmail.com"
+						><img
+							class="email"
+							src="./assets/images/email.png"
+							height="50"
+							alt="mail icon"
+						/>
+					</a>
+					<a href="https://www.linkedin.com/in/alexis-lovitz-815302178/"
+						><img
+							class="linkedin"
+							src="./assets/images/linkin transpernt.png"
+							height="50"
+							alt="linkedin logo"
+						/>
+					</a>
+					<a href="https://github.com/alexis1286"
+						><img
+							class="github"
+							src="./assets/images/github-logo.png"
+							height="50"
+							alt="github logo"
+						/>
+					</a>
+				</div>
+				<p>Alexis Lovitz ©2025</p>
+			</div>
+		</section>
 	</body>
 </html>
