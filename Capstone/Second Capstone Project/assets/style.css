@@ -12,6 +12,7 @@ body {
 	padding: 0;
 	
 }
+
 @media (max-width: 1300px) {
     .about-content {
         display: flex;
@@ -58,7 +59,6 @@ body {
 
     .AA-logo {
         max-width: 100%;
-        padding-right: 0;
     }
 
     .AA-Text {
@@ -265,11 +265,12 @@ h2 {
 }
 
 .AA-logo {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	max-width: 40%;
-	padding-right: 200px;
+	max-width: 50%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+	padding-right: 40px;
 }
 
 /**Contact Section**/
