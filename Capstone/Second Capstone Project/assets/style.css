@@ -12,6 +12,7 @@ head {
 body {
 	font-family: "Montserrat", sans-serif;
 }
+/* 
 
 @media (max-width: 1300px) {
 	.about-content {
@@ -57,9 +58,10 @@ body {
 		gap: 20px;
 	}
 
-    .AA-logo {
-        max-width: 100%;
-    }
+	.AA-logo {
+		max-width: 100%;
+		padding-right: 0;
+	}
 
 	.AA-Text {
 		max-width: 100%;
@@ -251,12 +253,11 @@ h2 {
 }
 
 .AA-logo {
-	max-width: 50%;
-    height: auto;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
-	padding-right: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 40%;
+	padding-right: 200px;
 }
 
 /**Contact Section**/
