@@ -1,6 +1,8 @@
-
-body, html {
-    overflow-x: hidden;
+body,
+html {
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
 }
 
 head {
@@ -8,74 +10,72 @@ head {
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	
+	font-family: "Montserrat", sans-serif;
 }
+/* 
+
 @media (max-width: 1300px) {
-    .about-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-        padding: 20px;
-    }
+	.about-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 30px;
+		padding: 20px;
+	}
 
-    .profile {
-        max-width: 100%;
-        text-align: center;
-        padding-right: 0;
-        box-sizing: border-box;
-    }
+	.profile {
+		max-width: 100%;
+		text-align: center;
+		padding-right: 0;
+		box-sizing: border-box;
+	}
 
-    .skills {
-        max-width: 100%;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-        gap: 20px;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        padding: 20px;
-    }
+	.skills {
+		max-width: 100%;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+		gap: 20px;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		padding: 20px;
+	}
 
-    .previous-projects {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 100%;
-        margin: 0 auto;
-        padding: 20px;
-        box-sizing: border-box;
-    }
+	.previous-projects {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 100%;
+		margin: 0 auto;
+		padding: 20px;
+		box-sizing: border-box;
+	}
 
-    .Attention {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 20px;
-    }
+	.Attention {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		gap: 20px;
+	}
 
-    .AA-logo {
-        max-width: 100%;
-        padding-right: 0;
-    }
+	.AA-logo {
+		max-width: 100%;
+		padding-right: 0;
+	}
 
-    .AA-Text {
-        max-width: 100%;
-        padding: 0 20px;
-        text-align: center;
-    }
-}
+	.AA-Text {
+		max-width: 100%;
+		padding: 0 20px;
+		text-align: center;
+	}
+} */
 
 .hero {
 	position: relative;
 	background-color: #f7cfd8;
-	padding-top: 100px;
-	padding-bottom: 0;
-	margin: 0;
+	padding: 100px 0 0;
 	width: 100%;
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 h1 {
@@ -88,7 +88,6 @@ h1 {
 
 h2 {
 	color: #ec8da3;
-	font-family: "Montserrat", sans-serif;
 	font-size: 2.5rem;
 	font-weight: normal;
 	padding-bottom: 10px;
@@ -119,10 +118,7 @@ h2 {
 }
 
 /*Skills Section*/
-
-/* About me header  */
 .about-me > h2 {
-	font-family: "Montserrat", sans-serif;
 	padding-top: 50px;
 	font-weight: bold;
 	font-size: 60px;
@@ -137,7 +133,6 @@ h2 {
 	align-items: center;
 	gap: 50px;
 	padding: 50px;
-	
 }
 
 .profile {
@@ -151,7 +146,6 @@ h2 {
 }
 
 .profile > p {
-	font-family: "Montserrat", sans-serif;
 	font-size: 1rem;
 	font-weight: bold;
 	color: #ec8da3;
@@ -163,8 +157,8 @@ h2 {
 }
 
 .skills img {
-	width: 100px;
-	height: 100px;
+    width: 100px;
+    height: 100px;
 }
 
 .skills {
@@ -174,7 +168,6 @@ h2 {
 	justify-content: center;
 	align-items: center;
 	max-width: 600px;
-
 }
 
 .skill-group {
@@ -197,9 +190,7 @@ h2 {
 	box-shadow: 10px 10px 2px #f7cfd8;
 
 	/*text formatting*/
-	font-family: "Montserrat", sans-serif;
 	text-align: center;
-	font-size: 1rem;
 	font-weight: bold;
 	color: #ec8da3;
 }
@@ -221,7 +212,6 @@ h2 {
 }
 
 .previous-projects > h2 {
-	font-family: "Montserrat", sans-serif;
 	padding-top: 50px;
 	font-weight: bold;
 	font-size: 60px;
@@ -231,7 +221,6 @@ h2 {
 }
 
 .AA-Text {
-	font-family: "Montserrat", sans-serif;
 	text-align: center;
 	font-weight: 500;
 	color: #ec8da3;
@@ -258,7 +247,6 @@ h2 {
 
 /**Attention assistant heading**/
 .AA-Text > h2 {
-	font-family: "Montserrat", sans-serif;
 	font-size: 50px;
 	text-align: center;
 	color: #ec8da3;
@@ -274,7 +262,6 @@ h2 {
 
 /**Contact Section**/
 .contact h2 {
-	font-family: "Montserrat", sans-serif;
 	padding-top: 50px;
 	font-weight: bold;
 	font-size: 60px;
@@ -293,6 +280,7 @@ h2 {
 }
 
 .form {
+	font-family: "Montserrat", sans-serif;
 	display: flex;
 	flex-direction: column;
 	border: 5px solid #ec8da3;
@@ -308,7 +296,7 @@ h2 {
 	border: 2px solid #ec8da3;
 	margin: 3px;
 	border-radius: 10px;
-	font-family: "Montserrat", sans-serif;
+
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 	background-color: #f7cfd8;
 	resize: none;
@@ -316,7 +304,6 @@ h2 {
 }
 
 .input-field::placeholder {
-	font-family: "Montserrat", sans-serif;
 	font-weight: bolder;
 	color: white;
 }
@@ -335,30 +322,23 @@ h2 {
 	background-color: #f7cfd8;
 	border: 2px solid #ec8da3;
 	border-radius: 7px;
-	font-family: "Montserrat", sans-serif;
+
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 
-	font-family: "Montserrat", sans-serif;
 	font-weight: bolder;
 	color: white;
 }
 
 /*footer section*/
 .footer {
-	position: relative;
 	background-color: #f7cfd8;
-	margin-top: 50px;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding: 50px 0;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 	gap: 10px;
-	   width: 100%;
-    box-sizing: border-box;
+	width: 100%;
 }
-
 
 .footer-icons {
 	display: flex;
@@ -366,10 +346,7 @@ h2 {
 }
 
 .footer p {
-	margin-top: 10px;
-	font-family: "Montserrat", sans-serif;
 	color: white;
 	font-size: 15px;
 	font-weight: bold;
 }
-
