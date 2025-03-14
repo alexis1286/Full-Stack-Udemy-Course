@@ -9,7 +9,6 @@
 // 	}
 // );
 
-
 //switch statemnt to detech which key was pressed and make the sound
 function makeSound(key) {
 	switch (key) {
@@ -59,14 +58,30 @@ for (var i = 0; i < buttons.length; i++) {
 		var buttonInnerHTML = this.innerHTML;
 
 		makeSound(buttonInnerHTML);
+		buttonAnim(buttonInnerHTML);
 	});
 }
 
 //event listener to the keyboard strokes
 //passing in "Event" thru a function will let us know which key was pressed on our keytboard
 
-//functions can be passed in, but they can also be callbacks - things called back after an event 
+//functions can be passed in, but they can also be callbacks - things called back after an event
 //already happened
 document.addEventListener("keydown", function (event) {
 	makeSound(event.key);
+	buttonAnim(event.key);
 });
+
+//function to animate button when clicked
+function buttonAnim(key) {
+
+	//selects active button 
+	var activebtn = document.querySelector("." + key);
+
+	//adds existing css class to button
+	activebtn.classList.add("pressed");
+	//timeout to remove the css class from the button to simulate animation
+	setTimeout(function () {
+		activebtn.classList.remove("pressed");
+	}, 100);
+}
