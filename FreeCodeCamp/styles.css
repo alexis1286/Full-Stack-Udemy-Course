@@ -1,0 +1,252 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	scroll-behavior: smooth;
+}
+
+#header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #3e4e3c;
+	color: #dadada;
+	padding: 1rem 2rem;
+	z-index: 1000;
+}
+.header-title {
+	margin-left: 1rem;
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+}
+
+#header img {
+	width: 100px;
+}
+
+#nav-bar ul {
+	display: flex;
+	list-style: none;
+	gap: 2rem;
+}
+
+#nav-bar a {
+	color: #dadada;
+	text-decoration: none;
+	font-weight: bold;
+	transition: color 0.3s ease;
+}
+
+#nav-bar a:hover {
+	color: #a68a64;
+}
+
+body {
+	padding-top: 100px;
+	color: #dadada;
+	padding-bottom: 120px;
+	background-color: #1c1c1c;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	margin-top: 1rem;
+}
+#submit {
+	background-color: #a68a64;
+	color: #1c1c1c;
+	border: none;
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+}
+
+#hero {
+	background-image: url("https://image.api.playstation.com/vulcan/ap/rnd/202206/0720/JKqkaz5Sy6AvH2fZAVdjTxR8.png?w=1920&thumb=false");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	min-height: 90vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 2rem;
+	position: relative;
+}
+
+.hero-content {
+	background: rgba(28, 28, 28, 0.8);
+	padding: 2rem 3rem;
+	border-radius: 15px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(5px);
+	text-align: center;
+}
+
+.hero-content h1 {
+	font-size: 2.5rem;
+	margin-bottom: 1.5rem;
+	color: #a68a64;
+}
+
+.hero-content form input[type="email"] {
+	padding: 0.5rem;
+	width: 100%;
+	max-width: 300px;
+	margin-bottom: 1rem;
+	border: none;
+	border-radius: 5px;
+}
+
+.hero-content #submit {
+	background-color: #a68a64;
+	color: #1c1c1c;
+	border: none;
+	padding: 0.6rem 1.2rem;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+}
+
+.hero-content #submit:hover {
+	background-color: #cfb183;
+}
+
+.about-content {
+	max-width: 800px;
+	margin: 0 auto;
+	line-height: 1.6;
+	padding: 1.3rem;
+	font-size: 1rem;
+}
+
+#gameplay {
+	padding: 3rem 2rem;
+	text-align: center;
+	color: #dadada;
+}
+
+.gameplay-feature {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	padding: 1.5rem;
+	transition: transform 0.3s ease;
+}
+
+.gameplay-feature:hover {
+	transform: scale(1.01);
+}
+
+.gameplay-feature img {
+	width: 100px;
+	height: 100px;
+	object-fit: contain;
+}
+
+.gameplay-feature h2 {
+	margin-bottom: 0.5rem;
+	text-align: left;
+}
+
+#characters {
+	padding: 3rem 2rem;
+	text-align: center;
+}
+
+.character-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2rem;
+	margin-top: 2rem;
+}
+
+.character-box {
+	background-color: #2a3329;
+	border-radius: 10px;
+	padding: 2rem;
+	width: 280px;
+	color: #dadada;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	transition: transform 0.3s ease;
+}
+
+.character-box:hover {
+	transform: scale(1.03);
+}
+
+.character-box h2 {
+	margin-bottom: 0.5rem;
+	font-size: 1.4rem;
+}
+
+.character-box p {
+	font-size: 0.95rem;
+	line-height: 1.5;
+}
+
+#media h1 {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.buynow {
+	background-color: #a68a64;
+	color: #1c1c1c;
+	font-size: large;
+	border: none;
+	padding: 1.2rem 1.2rem;
+	cursor: pointer;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+	margin-top: 4rem;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	background-color: #3e4e3c;
+	color: #dadada;
+	padding: 1rem 2rem;
+	z-index: 1000;
+	border-bottom: 1px solid #333;
+}
+@media (max-width: 768px) {
+	#nav-bar ul {
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	#header {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.hero-content h1 {
+		font-size: 2rem;
+	}
+
+	.gameplay-feature {
+		flex-direction: column;
+		text-align: center;
+	}
+}
